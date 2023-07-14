@@ -86,7 +86,7 @@
             $product4 = new Bed(
                 'Cuccia morbida rotonda per gatti',
                 19.90,
-                'Un posto accogliente e confortevole per il tuo amico felino, con imbottitura soffice e tessuti caldi per il massimo del relax e del riposo',
+                'Un posto accogliente e confortevole per il tuo amico felino, con imbottitura soffice e tessuti caldi per il massimo del relax e del riposo.',
                 '8003365482215',
                 'Vanansa',
                 4.3,

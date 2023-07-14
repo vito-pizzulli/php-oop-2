@@ -7,6 +7,7 @@
         public $brand;
         public $rating;
         public $imageUrl;
+        public static $category = "Prodotto";
 
         function __construct(String $title, Float $price, String $description, String $barcode, String $brand, Float $rating, String $imageUrl) {
             $this->title = $title;

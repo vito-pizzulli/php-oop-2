@@ -55,6 +55,48 @@
             </ul>
         <?php
             }
+
+            foreach($catProducts as $catProduct) {
+                ?>
+                    <ul>
+                        <li>Titolo: <?php echo $catProduct->title ?></li>
+                        <li>Prezzo: <?php printf('%.2f', $catProduct->price) ?> €</li>
+                        <li>Descrizione: <?php echo $catProduct->description ?></li>
+                        <li>Barcode: <?php echo $catProduct->barcode ?></li>
+                        <li>Marca: <?php echo $catProduct->brand ?></li>
+                        <li>Marca: <?php echo $catProduct->rating ?></li>
+                        <li><img src="<?php echo $catProduct->imageUrl ?>" alt="Product Image"></li>
+                        <li><i class="fa-solid fa-cat"></i></li>
+                        <?php
+                            echo $catProduct::$category;
+        
+                            if ($catProduct::$category == 'Cibo') {
+                                ?>
+                                    <li><i class="fa-solid fa-drumstick-bite"></i></li>
+                                    <li>Tipo: <?php echo $catProduct->type ?></li>
+                                    <li>Gusto: <?php echo $catProduct->taste ?></li>
+                                    <li>Ingredienti: <?php echo $catProduct->ingredients ?></li>
+                                    <li>Valori nutrizionali: <?php echo $catProduct->nutritionalValues ?></li>
+                                <?php
+                            } elseif ($catProduct::$category == 'Gioco') {
+                                ?>
+                                    <li><i class="fa-solid fa-baseball"></i></li>
+                                    <li>Materiale: <?php echo $catProduct->material ?></li>
+                                <?php
+                            } elseif ($catProduct::$category == 'Cuccia') {
+                                ?>
+                                    <li><i class="fa-solid fa-moon"></i></li>
+                                    <li>Materiale: <?php echo $catProduct->material ?></li>
+                                    <li>Dimensioni: <?php echo $catProduct->size ?></li>
+                                <?php
+                            } else {
+                                ?><li><i class="fa-solid fa-tag"></i></li><?php
+                            }
+                        ?>
+                    </ul>
+                <?php
+                    }
+                ?>
         ?>
     </main>
 </body>

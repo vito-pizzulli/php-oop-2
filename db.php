@@ -39,8 +39,9 @@
         ),
         $product4 = new Bed(
             'Cuccia per cani in legno',
-            49,90,
+            49.90,
             'Cuccia per cani in legno massello, resistente e confortevole, con tetto impermeabile e pavimento rialzato per mantenere il tuo amico a quattro zampe al caldo e all’asciutto.',
+            '8004618793458',
             'Gardiun',
             4.90,
             'https://m.media-amazon.com/images/I/71KCXSSKzqL._AC_UF894,1000_QL80_.jpg',

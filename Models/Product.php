@@ -4,13 +4,17 @@
         public $price;
         public $description;
         public $barcode;
+        public $brand;
+        public $rating;
         public $imageUrl;
 
-        function __construct(String $title, Float $price, String $description, String $barcode, String $imageUrl) {
+        function __construct(String $title, Float $price, String $description, String $barcode, String $brand, Float $rating, String $imageUrl) {
             $this->title = $title;
             $this->price = $price;
             $this->description = $description;
             $this->barcode = $barcode;
+            $this->brand = $brand;
+            $this->rating = $rating;
             $this->imageUrl = $imageUrl;
         }
     }

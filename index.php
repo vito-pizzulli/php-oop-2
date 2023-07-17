@@ -1,5 +1,6 @@
 <?php
     include_once __DIR__ . '/db.php';
+    shuffle($products);
 ?>
 
 <!DOCTYPE html>
@@ -71,7 +72,7 @@
                         }
                             ?>
                             <h3 class="card-text text-success"><?php printf('%.2f', $product->price) ?> €</h3>
-                            <a href="#" class="btn btn-success d-block">Acquista</a>
+                            <a href="#" class="btn btn-success w-25">Acquista</a>
                     </div>
                 </div>
         <?php

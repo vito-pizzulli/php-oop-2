@@ -30,7 +30,9 @@
             foreach($dogProducts as $dogProduct) {
         ?>
                 <div class="card m-3" style="width: calc(100% / 3 - 2rem);">
+                <div class="img-container">
                     <img src="<?php echo $dogProduct->imageUrl ?>" class="card-img-top" alt="Product Image">
+                </div>
                     <div class="card-body">
                         <h2 class="card-title"><?php echo $dogProduct->title ?></h2>
                         <p class="card-text"><?php echo $dogProduct->description ?></p>
@@ -72,7 +74,9 @@
             foreach($catProducts as $catProduct) {
         ?>
                 <div class="card m-3" style="width: calc(100% / 3 - 2rem);">
+                <div class="img-container">
                     <img src="<?php echo $catProduct->imageUrl ?>" class="card-img-top" alt="Product Image">
+                </div>
                     <div class="card-body">
                         <h2 class="card-title"><?php echo $catProduct->title ?></h2>
                         <p class="card-text"><?php echo $catProduct->description ?></p>

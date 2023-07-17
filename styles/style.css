@@ -2,13 +2,15 @@ span, a {
     display: block;
 }
 
-img {
-    width: 500px;
-    aspect-ratio: 1;
-    padding: 1rem;
-}
-
 i {
     font-size: 2rem;
     margin: .5rem 0;
+}
+
+div.img-container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }

@@ -32,49 +32,50 @@
         ?>
                 <div class="card m-3" style="width: calc(100% / 3 - 2rem);">
                     <div class="my_img-container">
-                        <img src="<?php echo $product->imageUrl ?>" class="card-img-top" alt="Product Image">
+                        <img src="<?php echo $product->imageUrl ?>" class="my_img" alt="Product Image">
                     </div>
                     <div class="my_card-body">
                         <h2 class="card-title"><?php echo $product->title ?></h2>
                         <p class="card-text"><?php echo $product->description ?></p>
-                        <span class="card-text d-block">Barcode: <?php echo $product->barcode ?></span>
-                        <span class="card-text d-block">Marca: <?php echo $product->brand ?></span>
-                        <span class="card-text d-block">Valutazione: <?php echo $product->rating ?></span>
-                        <?php echo $product::$category;
+                        <span class="card-text d-block"><strong>Barcode:</strong> <?php echo $product->barcode ?></span>
+                        <span class="card-text d-block"><strong>Marca:</strong> <?php echo $product->brand ?></span>
+                        <span class="card-text d-block"><strong>Valutazione:</strong> <?php echo $product->rating ?></span>
 
-                        if ($product->animalType == 'Cane') {
-                            ?><span class="card-text d-block"><i class="fa-solid fa-dog my_icon"></i></span><?php
-                        } elseif ($product->animalType == 'Gatto') {
-                            ?><span class="card-text d-block"><i class="fa-solid fa-cat my_icon"></i></span><?php
-                        }
+                        <?php
+                            if ($product::$category == 'Cibo') {
+                        ?>
+                                <span class="card-text d-block"><strong>Tipo:</strong> <?php echo $product->type ?></span>
+                                <span class="card-text d-block"><strong>Gusto:</strong> <?php echo $product->taste ?></span>
+                                <p class="card-text"><strong>Ingredienti:</strong> <?php echo $product->ingredients ?></p>
+                                <p class="card-text"><strong>Valori nutrizionali:</strong> <?php echo $product->nutritionalValues ?></p>
+                                <span class="me-4"><i class="fa-solid fa-drumstick-bite my_icon"></i> <?php echo $product::$category ?></span>
+                            <?php
+                            } elseif ($product::$category == 'Gioco') {
+                            ?>
+                                <span class="card-text d-block"><strong>Materiale:</strong> <?php echo $product->material ?></span>
+                                <span class="me-4"><i class="fa-solid fa-baseball my_icon"></i> <?php echo $product::$category ?></span>
+                            <?php
+                            } elseif ($product::$category == 'Cuccia') {
+                            ?>
+                                <span class="card-text d-block"><strong>Materiale:</strong> <?php echo $product->material ?></span>
+                                <span class="card-text d-block"><strong>Dimensioni:</strong> <?php echo $product->size ?></span>
+                                <span class="me-4"><i class="fa-solid fa-moon my_icon"></i> <?php echo $product::$category ?></span>
+                            <?php
+                            } else {
+                                ?><span class="me-4"><i class="fa-solid fa-tag my_icon"></i> <?php echo $product::$category ?></span><?php
+                            }
 
-                        if ($product::$category == 'Cibo') {
+                            if ($product->animalType == 'Cane') {
+                                ?><span><i class="fa-solid fa-dog my_icon"></i> Cane</span><?php
+                            } elseif ($product->animalType == 'Gatto') {
+                                ?><span><i class="fa-solid fa-cat my_icon"></i> Gatto</span><?php
+                            }
+
                             ?>
-                                <span class="card-text d-block"><i class="fa-solid fa-drumstick-bite my_icon"></i></span>
-                                <span class="card-text d-block">Tipo: <?php echo $product->type ?></span>
-                                <span class="card-text d-block">Gusto: <?php echo $product->taste ?></span>
-                                <p class="card-text">Ingredienti: <?php echo $product->ingredients ?></p>
-                                <p class="card-text">Valori nutrizionali: <?php echo $product->nutritionalValues ?></p>
-                            <?php
-                        } elseif ($product::$category == 'Gioco') {
-                            ?>
-                                <span class="card-text d-block"><i class="fa-solid fa-baseball my_icon"></i></span>
-                                <span class="card-text d-block">Materiale: <?php echo $product->material ?></span>
-                            <?php
-                        } elseif ($product::$category == 'Cuccia') {
-                            ?>
-                                <span class="card-text d-block"><i class="fa-solid fa-moon my_icon"></i></span>
-                                <span class="card-text d-block">Materiale: <?php echo $product->material ?></span>
-                                <span class="card-text d-block">Dimensioni: <?php echo $product->size ?></span>
-                            <?php
-                        } else {
-                            ?><span class="card-text d-block"><i class="fa-solid fa-tag my_icon"></i></span><?php
-                        }
-                            ?>
-                            <div class="price-and-buy">
-                                <h3 class="card-text text-success"><?php printf('%.2f', $product->price) ?> €</h3>
-                                <a href="#" class="btn btn-success my_button">Acquista</a>
-                            </div>
+                        <div class="my_price-and-buy">
+                            <h3 class="card-text text-success align-middle"><?php printf('%.2f', $product->price) ?> €</h3>
+                            <a href="#" class="btn btn-success my_button">Acquista</a>
+                        </div>
                     </div>
                 </div>
         <?php

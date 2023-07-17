@@ -1,25 +1,34 @@
+span {
+    margin-bottom: 1rem;
+}
+
 div.my_img-container {
-    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    height: 400px;
+    padding: 4rem;
+}
+
+div.my_img-container img.my_img {
+    height: 100%;
 }
 
 div.my_card-body {
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 1rem;
 }
 
 div.my_card-body i.my_icon {
     font-size: 2rem;
-    margin: .5rem 0;
+    margin-right: .5rem;
 }
 
-div.my_card-body div.price-and-buy {
+div.my_card-body div.my_price-and-buy {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    margin-top: 1rem;
+}
+
+div.my_card-body div.my_price-and-buy h3 {
+    margin-right: 2rem;
 }

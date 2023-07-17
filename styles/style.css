@@ -1,13 +1,9 @@
-span, a {
-    display: block;
-}
-
-i {
+i.my_icon {
     font-size: 2rem;
     margin: .5rem 0;
 }
 
-div.img-container {
+div.my_img-container {
     height: 600px;
     display: flex;
     justify-content: center;

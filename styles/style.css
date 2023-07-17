@@ -26,9 +26,9 @@ div.my_card-body i.my_icon {
 div.my_card-body div.my_price-and-buy {
     display: flex;
     justify-content: start;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 div.my_card-body div.my_price-and-buy h3 {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }

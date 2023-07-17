@@ -38,6 +38,7 @@
             4.2,
             'https://m.media-amazon.com/images/I/515GVOGS3OL._AC_UF894,1000_QL80_.jpg',
             'Cane',
+            'Verde',
             'Gomma'
         ),
         $product4 = new Bed(
@@ -49,6 +50,7 @@
             4.9,
             'https://m.media-amazon.com/images/I/71KCXSSKzqL._AC_UF894,1000_QL80_.jpg',
             'Cane',
+            'Legno, tetto Verde',
             'Legno',
             '82 x 86 x 99 cm'
         ),
@@ -85,6 +87,7 @@
             3.7,
             'https://m.media-amazon.com/images/I/61AxF15DcFL._AC_SL1500_.jpg',
             'Gatto',
+            'Nero, piume Multicolore',
             'Poliestere'
         ),
         $product8 = new Bed(
@@ -96,6 +99,7 @@
             4.3,
             'https://m.media-amazon.com/images/I/71uPUUXI7DL._AC_SL1001_.jpg',
             'Gatto',
+            'Grigio',
             'Pelliccia sintetica',
             '40 x 16 x 40 cm'
         )

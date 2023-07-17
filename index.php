@@ -52,11 +52,13 @@
                             <?php
                             } elseif ($product::$category == 'Gioco') {
                             ?>
+                                <span class="card-text d-block"><strong>Colore:</strong> <?php echo $product->color ?></span>
                                 <span class="card-text d-block"><strong>Materiale:</strong> <?php echo $product->material ?></span>
                                 <span class="me-4"><i class="fa-solid fa-baseball my_icon"></i> <?php echo $product::$category ?></span>
                             <?php
                             } elseif ($product::$category == 'Cuccia') {
                             ?>
+                                <span class="card-text d-block"><strong>Colore:</strong> <?php echo $product->color ?></span>
                                 <span class="card-text d-block"><strong>Materiale:</strong> <?php echo $product->material ?></span>
                                 <span class="card-text d-block"><strong>Dimensioni:</strong> <?php echo $product->size ?></span>
                                 <span class="me-4"><i class="fa-solid fa-moon my_icon"></i> <?php echo $product::$category ?></span>

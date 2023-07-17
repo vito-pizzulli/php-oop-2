@@ -68,9 +68,9 @@
                             }
 
                             if ($product->animalType == 'Cane') {
-                                ?><span><i class="fa-solid fa-dog my_icon"></i> Cane</span><?php
+                                ?><span><i class="fa-solid fa-dog my_icon"></i> <?php echo $product->animalType ?> </span><?php
                             } elseif ($product->animalType == 'Gatto') {
-                                ?><span><i class="fa-solid fa-cat my_icon"></i> Gatto</span><?php
+                                ?><span><i class="fa-solid fa-cat my_icon"></i> <?php echo $product->animalType ?> </span><?php
                             }
 
                             ?>

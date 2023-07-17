@@ -8,9 +8,8 @@
         public $rating;
         public $imageUrl;
         public $animalType;
-        public $category;
 
-        function __construct(String $title, Float $price, String $description, String $barcode, String $brand, Float $rating, String $imageUrl, String $animalType, String $category) {
+        function __construct(String $title, Float $price, String $description, String $barcode, String $brand, Float $rating, String $imageUrl, String $animalType) {
             $this->title = $title;
             $this->price = $price;
             $this->description = $description;
@@ -19,7 +18,6 @@
             $this->rating = $rating;
             $this->imageUrl = $imageUrl;
             $this->animalType = $animalType;
-            $this->category = $category;
         }
     }
 ?>

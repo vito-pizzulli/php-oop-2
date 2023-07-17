@@ -42,29 +42,29 @@
                         <span class="card-text d-block"><strong>Valutazione:</strong> <?php echo $product->rating ?></span>
 
                         <?php
-                            if ($product->category == 'Cibo') {
-                        ?>
+                            if (get_class($product) === 'Food') {
+                        ?>      
                                 <span class="card-text d-block"><strong>Tipo:</strong> <?php echo $product->type ?></span>
                                 <span class="card-text d-block"><strong>Gusto:</strong> <?php echo $product->taste ?></span>
                                 <p class="card-text"><strong>Ingredienti:</strong> <?php echo $product->ingredients ?></p>
                                 <p class="card-text"><strong>Valori nutrizionali:</strong> <?php echo $product->nutritionalValues ?></p>
-                                <span class="me-4"><i class="fa-solid fa-drumstick-bite my_icon"></i> <?php echo $product->category ?></span>
+                                <span class="me-4"><i class="fa-solid fa-drumstick-bite my_icon"></i>Cibo</span>
                             <?php
-                            } elseif ($product->category == 'Gioco') {
+                            } elseif (get_class($product) === 'Toy') {
                             ?>
                                 <span class="card-text d-block"><strong>Colore:</strong> <?php echo $product->color ?></span>
                                 <span class="card-text d-block"><strong>Materiale:</strong> <?php echo $product->material ?></span>
-                                <span class="me-4"><i class="fa-solid fa-baseball my_icon"></i> <?php echo $product->category ?></span>
+                                <span class="me-4"><i class="fa-solid fa-baseball my_icon"></i>Gioco</span>
                             <?php
-                            } elseif ($product->category == 'Cuccia') {
+                            } elseif (get_class($product) === 'Bed') {
                             ?>
                                 <span class="card-text d-block"><strong>Colore:</strong> <?php echo $product->color ?></span>
                                 <span class="card-text d-block"><strong>Materiale:</strong> <?php echo $product->material ?></span>
                                 <span class="card-text d-block"><strong>Dimensioni:</strong> <?php echo $product->size ?></span>
-                                <span class="me-4"><i class="fa-solid fa-moon my_icon"></i> <?php echo $product->category ?></span>
+                                <span class="me-4"><i class="fa-solid fa-moon my_icon"></i>Cuccia</span>
                             <?php
                             } else {
-                                ?><span class="me-4"><i class="fa-solid fa-tag my_icon"></i> <?php echo $product->category ?></span><?php
+                                ?><span class="me-4"><i class="fa-solid fa-tag my_icon"></i>Prodotto</span><?php
                             }
 
                             if ($product->animalType == 'Cane') {

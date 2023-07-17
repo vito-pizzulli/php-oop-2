@@ -13,8 +13,7 @@
             'Seresto',
             4.2,
             'https://m.media-amazon.com/images/I/41iKAeH6eRL.jpg',
-            'Cane',
-            'Prodotto'
+            'Cane'
         ),
         $product2 = new Food(
             'Croccantini per cani, gusto manzo, 3kg',
@@ -25,7 +24,6 @@
             3.9,
             'https://m.media-amazon.com/images/I/71OSRPJ5QKS._AC_UF894,1000_QL80_.jpg',
             'Cane',
-            'Cibo',
             'Secco',
             'Manzo',
             'Carne di manzo disidratata, farina di riso, patate dolci, olio di girasole, polpa di barbabietola, carote, spinaci, semi di lino, lievito di birra, estratto di rosmarino.',
@@ -40,7 +38,6 @@
             4.2,
             'https://m.media-amazon.com/images/I/515GVOGS3OL._AC_UF894,1000_QL80_.jpg',
             'Cane',
-            'Gioco',
             'Verde',
             'Gomma'
         ),
@@ -53,7 +50,6 @@
             4.9,
             'https://m.media-amazon.com/images/I/71KCXSSKzqL._AC_UF894,1000_QL80_.jpg',
             'Cane',
-            'Cuccia',
             'Legno, tetto Verde',
             'Legno',
             '82 x 86 x 99 cm'
@@ -66,8 +62,7 @@
             'Amazon Basics',
             4.4,
             'https://m.media-amazon.com/images/I/71Fjjv59rAL._AC_SL1500_.jpg',
-            'Gatto',
-            'Prodotto'
+            'Gatto'
         ),
         $product6 = new Food(
             'Croccantini per gatti, gusto pollo, 1.5kg',
@@ -78,7 +73,6 @@
             4.7,
             'https://m.media-amazon.com/images/I/71wI+c1lClL._AC_UF894,1000_QL80_.jpg',
             'Gatto',
-            'Cibo',
             'Secco',
             'Pollo',
             'Pollo disidratato, Riso, Mais, Farina di glutine di mais, Grassi animali, Polpa di barbabietola, Lievito di birra, Olio di pesce, Minerali, Vitamine.',
@@ -93,7 +87,6 @@
             3.7,
             'https://m.media-amazon.com/images/I/61AxF15DcFL._AC_SL1500_.jpg',
             'Gatto',
-            'Gioco',
             'Nero, piume Multicolore',
             'Poliestere'
         ),
@@ -106,7 +99,6 @@
             4.3,
             'https://m.media-amazon.com/images/I/71uPUUXI7DL._AC_SL1001_.jpg',
             'Gatto',
-            'Cuccia',
             'Grigio',
             'Pelliccia sintetica',
             '40 x 16 x 40 cm'

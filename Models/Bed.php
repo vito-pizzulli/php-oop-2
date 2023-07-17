@@ -3,10 +3,9 @@
     class Bed extends Product {
         use ColorAndMaterial;
         public $size;
-        public static $category = "Cuccia";
 
-        function __construct(String $title, Float $price, String $description, String $barcode, String $brand, Float $rating, String $animalType, String $imageUrl, String $color, String $material, String $size) {
-            parent::__construct($title, $price, $description, $barcode, $brand, $rating, $animalType, $imageUrl);
+        function __construct(String $title, Float $price, String $description, String $barcode, String $brand, Float $rating, String $imageUrl,   String $animalType, String $category, String $color, String $material, String $size) {
+            parent::__construct($title, $price, $description, $barcode, $brand, $rating, $imageUrl, $animalType, $category);
             $this->color = $color;
             $this->material = $material;
             $this->size = $size;

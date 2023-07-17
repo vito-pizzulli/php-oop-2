@@ -1,12 +1,25 @@
-i.my_icon {
-    font-size: 2rem;
-    margin: .5rem 0;
-}
-
 div.my_img-container {
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
+}
+
+div.my_card-body {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+div.my_card-body i.my_icon {
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+
+div.my_card-body div.price-and-buy {
+    display: flex;
+    justify-content: space-between;
 }

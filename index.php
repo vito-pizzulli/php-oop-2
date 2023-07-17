@@ -31,10 +31,10 @@
             foreach($products as $product) {
         ?>
                 <div class="card m-3" style="width: calc(100% / 3 - 2rem);">
-                <div class="my_img-container">
-                    <img src="<?php echo $product->imageUrl ?>" class="card-img-top" alt="Product Image">
-                </div>
-                    <div class="card-body">
+                    <div class="my_img-container">
+                        <img src="<?php echo $product->imageUrl ?>" class="card-img-top" alt="Product Image">
+                    </div>
+                    <div class="my_card-body">
                         <h2 class="card-title"><?php echo $product->title ?></h2>
                         <p class="card-text"><?php echo $product->description ?></p>
                         <span class="card-text d-block">Barcode: <?php echo $product->barcode ?></span>
@@ -71,8 +71,10 @@
                             ?><span class="card-text d-block"><i class="fa-solid fa-tag my_icon"></i></span><?php
                         }
                             ?>
-                            <h3 class="card-text text-success"><?php printf('%.2f', $product->price) ?> €</h3>
-                            <a href="#" class="btn btn-success w-25">Acquista</a>
+                            <div class="price-and-buy">
+                                <h3 class="card-text text-success"><?php printf('%.2f', $product->price) ?> €</h3>
+                                <a href="#" class="btn btn-success my_button">Acquista</a>
+                            </div>
                     </div>
                 </div>
         <?php
